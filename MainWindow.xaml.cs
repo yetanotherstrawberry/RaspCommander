@@ -37,7 +37,7 @@ namespace RaspCommander
         private void DajBlad(ObservableCollection<Wpis> do_zmiany, Exception wyjatek, string tytul = null)
         {
 
-            MessageBox.Show(wyjatek.Message, tytul != null ? nazwa + " - " + tytul : nazwa);
+            MessageBox.Show(wyjatek.Message, tytul != null ? nazwa + " - " + tytul : nazwa, MessageBoxButton.OK, MessageBoxImage.Error);
             if (do_zmiany != null) ZmienZawartosc(do_zmiany, do_zmiany == LeweItemki ? lewy_katalog : prawy_katalog);
 
         }
@@ -328,7 +328,6 @@ namespace RaspCommander
         {
 
             Title = nazwa;
-            DataContext = this;
             InitializeComponent();
             Inicjuj();
 

@@ -12,7 +12,8 @@ namespace RaspCommander
 
         private void Button_Click(object sender, RoutedEventArgs e) => Close();
 
-        private void Window_Closing(object sender, CancelEventArgs e) => DialogResult = !string.IsNullOrEmpty(Text = Text?.Trim());
+        private void Window_Closing(object sender, CancelEventArgs e)
+            => DialogResult = !string.IsNullOrEmpty(Text = Text?.Trim());
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {

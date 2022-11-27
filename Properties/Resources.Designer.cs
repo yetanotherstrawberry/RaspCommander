@@ -234,15 +234,12 @@ namespace RaspCommander.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Klawisze:
-        ///L - wyświetl licencję
-        ///F7 - nowy folder
-        ///F8 - usuń
-        ///.
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        public static string README {
+        public static byte[] README {
             get {
-                return ResourceManager.GetString("README", resourceCulture);
+                object obj = ResourceManager.GetObject("README", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         

@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -195,7 +196,7 @@ namespace RaspCommander
                         MessageBox.Show(Properties.Resources.LICENSE, Properties.Resources.LICENSE_TITLE);
                         break;
                     case Key.F1:
-                        MessageBox.Show(Properties.Resources.README, Properties.Resources.README_TITLE);
+                        MessageBox.Show(Encoding.UTF8.GetString(Properties.Resources.README), Properties.Resources.README_TITLE);
                         break;
                 }
             }

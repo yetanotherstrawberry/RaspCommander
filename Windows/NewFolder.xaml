@@ -1,0 +1,19 @@
+﻿<Window x:Class="RaspCommander.NewFolder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:prop="clr-namespace:RaspCommander.Properties"
+        mc:Ignorable="d"
+        KeyDown="Window_KeyDown"
+        Closing="Window_Closing"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        Title="{x:Static prop:Resources.MENU_NEW_FOLDER}"
+        Height="110" Width="300" MinHeight="110" MinWidth="300" MaxHeight="300">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBox Text="{Binding Text}" Margin="5" />
+            <Button Click="Button_Click" Margin="100,0,100,0" Content="{x:Static prop:Resources.BUTTON_ADD}" />
+        </StackPanel>
+    </Grid>
+</Window>

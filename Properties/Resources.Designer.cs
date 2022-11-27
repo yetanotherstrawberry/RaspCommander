@@ -22,7 +22,7 @@ namespace RaspCommander.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace RaspCommander.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RaspCommander.Properties.Resources", typeof(Resources).Assembly);
@@ -51,12 +51,129 @@ namespace RaspCommander.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RaspCommander.
+        /// </summary>
+        public static string APP_TITLE {
+            get {
+                return ResourceManager.GetString("APP_TITLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add.
+        /// </summary>
+        public static string BUTTON_ADD {
+            get {
+                return ResourceManager.GetString("BUTTON_ADD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        public static string ERROR_TITLE {
+            get {
+                return ResourceManager.GetString("ERROR_TITLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to File already exists..
+        /// </summary>
+        public static string EXC_ALREADY_EXISTS {
+            get {
+                return ResourceManager.GetString("EXC_ALREADY_EXISTS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You cannot copy to this folder..
+        /// </summary>
+        public static string EXC_CANNOT_COPY {
+            get {
+                return ResourceManager.GetString("EXC_CANNOT_COPY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unsupported format..
+        /// </summary>
+        public static string EXC_FORMAT {
+            get {
+                return ResourceManager.GetString("EXC_FORMAT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An error has occured..
+        /// </summary>
+        public static string EXC_INVALID_DATA {
+            get {
+                return ResourceManager.GetString("EXC_INVALID_DATA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You must select a file to do that..
+        /// </summary>
+        public static string EXC_NOTHING_SELECTED {
+            get {
+                return ResourceManager.GetString("EXC_NOTHING_SELECTED", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Destination path is same as the source path..
+        /// </summary>
+        public static string EXC_SAME_PATH {
+            get {
+                return ResourceManager.GetString("EXC_SAME_PATH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You cannot modify modify this folder..
+        /// </summary>
+        public static string EXC_VIRTUAL_FOLDER_DELETE {
+            get {
+                return ResourceManager.GetString("EXC_VIRTUAL_FOLDER_DELETE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You cannot create a folder here..
+        /// </summary>
+        public static string EXC_VIRTUAL_FOLDER_NEW_FOLDER {
+            get {
+                return ResourceManager.GetString("EXC_VIRTUAL_FOLDER_NEW_FOLDER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Created.
+        /// </summary>
+        public static string GRID_DATE_LABEL {
+            get {
+                return ResourceManager.GetString("GRID_DATE_LABEL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        public static string GRID_NAME_LABEL {
+            get {
+                return ResourceManager.GetString("GRID_NAME_LABEL", resourceCulture);
             }
         }
         
@@ -74,9 +191,45 @@ namespace RaspCommander.Properties {
         ///
         ///The abov [rest of string was truncated]&quot;;.
         /// </summary>
-        internal static string LICENSE {
+        public static string LICENSE {
             get {
                 return ResourceManager.GetString("LICENSE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Program license.
+        /// </summary>
+        public static string LICENSE_TITLE {
+            get {
+                return ResourceManager.GetString("LICENSE_TITLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete.
+        /// </summary>
+        public static string MENU_DELETE {
+            get {
+                return ResourceManager.GetString("MENU_DELETE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New folder.
+        /// </summary>
+        public static string MENU_NEW_FOLDER {
+            get {
+                return ResourceManager.GetString("MENU_NEW_FOLDER", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refresh.
+        /// </summary>
+        public static string MENU_REFRESH {
+            get {
+                return ResourceManager.GetString("MENU_REFRESH", resourceCulture);
             }
         }
         
@@ -87,9 +240,18 @@ namespace RaspCommander.Properties {
         ///F8 - usuń
         ///.
         /// </summary>
-        internal static string README {
+        public static string README {
             get {
                 return ResourceManager.GetString("README", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Read me.
+        /// </summary>
+        public static string README_TITLE {
+            get {
+                return ResourceManager.GetString("README_TITLE", resourceCulture);
             }
         }
     }

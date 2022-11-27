@@ -117,11 +117,65 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="APP_TITLE" xml:space="preserve">
+    <value>RaspCommander</value>
+  </data>
+  <data name="BUTTON_ADD" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="ERROR_TITLE" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="EXC_ALREADY_EXISTS" xml:space="preserve">
+    <value>File already exists.</value>
+  </data>
+  <data name="EXC_CANNOT_COPY" xml:space="preserve">
+    <value>You cannot copy to this folder.</value>
+  </data>
+  <data name="EXC_FORMAT" xml:space="preserve">
+    <value>Unsupported format.</value>
+  </data>
+  <data name="EXC_INVALID_DATA" xml:space="preserve">
+    <value>An error has occured.</value>
+  </data>
+  <data name="EXC_NOTHING_SELECTED" xml:space="preserve">
+    <value>You must select a file to do that.</value>
+  </data>
+  <data name="EXC_SAME_PATH" xml:space="preserve">
+    <value>Destination path is same as the source path.</value>
+  </data>
+  <data name="EXC_VIRTUAL_FOLDER_DELETE" xml:space="preserve">
+    <value>You cannot modify modify this folder.</value>
+  </data>
+  <data name="EXC_VIRTUAL_FOLDER_NEW_FOLDER" xml:space="preserve">
+    <value>You cannot create a folder here.</value>
+  </data>
+  <data name="GRID_DATE_LABEL" xml:space="preserve">
+    <value>Created</value>
+  </data>
+  <data name="GRID_NAME_LABEL" xml:space="preserve">
+    <value>Name</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="LICENSE" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\LICENSE.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
+  <data name="LICENSE_TITLE" xml:space="preserve">
+    <value>Program license</value>
+  </data>
+  <data name="MENU_DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="MENU_NEW_FOLDER" xml:space="preserve">
+    <value>New folder</value>
+  </data>
+  <data name="MENU_REFRESH" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
   <data name="README" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\README.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="README_TITLE" xml:space="preserve">
+    <value>Read me</value>
   </data>
 </root>

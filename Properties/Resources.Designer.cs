@@ -234,6 +234,33 @@ namespace RaspCommander.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to ....
+        /// </summary>
+        public static string PROGRESS_DEFAULT_TEXT {
+            get {
+                return ResourceManager.GetString("PROGRESS_DEFAULT_TEXT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Progress.
+        /// </summary>
+        public static string PROGRESS_TITLE {
+            get {
+                return ResourceManager.GetString("PROGRESS_TITLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Are you sure you want to delete &quot;{0}&quot;?.
+        /// </summary>
+        public static string QUESTION_DELETE_TEXT {
+            get {
+                return ResourceManager.GetString("QUESTION_DELETE_TEXT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         public static byte[] README {

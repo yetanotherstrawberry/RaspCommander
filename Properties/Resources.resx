@@ -172,6 +172,15 @@
   <data name="MENU_REFRESH" xml:space="preserve">
     <value>Refresh</value>
   </data>
+  <data name="PROGRESS_DEFAULT_TEXT" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="PROGRESS_TITLE" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="QUESTION_DELETE_TEXT" xml:space="preserve">
+    <value>Are you sure you want to delete "{0}"?</value>
+  </data>
   <data name="README" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\README.md;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>

@@ -1,0 +1,17 @@
+﻿<Window x:Class="RaspCommander.Progress"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:prop="clr-namespace:RaspCommander.Properties"
+        mc:Ignorable="d"
+        DataContext="{Binding RelativeSource={RelativeSource Self}}"
+        Title="{x:Static prop:Resources.PROGRESS_TITLE}"
+        Height="110" Width="400" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Margin="10">
+            <ProgressBar Value="{Binding ProgressValue}" Height="20" x:Name="Bar" Minimum="0" Maximum="{Binding Items}" />
+            <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" Text="{Binding ProgressText}" x:Name="Text" FontSize="10" />
+        </StackPanel>
+    </Grid>
+</Window>

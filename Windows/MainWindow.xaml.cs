@@ -76,11 +76,11 @@ namespace RaspCommander
                 if (dropArgs.Data.GetDataPresent(typeof(FileEntry)))
                 {
                     var sourcePath = (FileEntry)dropArgs.Data.GetData(typeof(FileEntry));
-                    await Task.Factory.StartNew(() => Helpers.Copy(sourcePath.Path, destPath));
+                    await Task.Factory.StartNew(() => Helpers.Copy(sourcePath.Path, destPath, Dispatcher));
                 }
                 else if (dropArgs.Data.GetDataPresent(DataFormats.FileDrop))
                     foreach (var element in (string[])dropArgs.Data.GetData(DataFormats.FileDrop))
-                        await Task.Factory.StartNew(() => Helpers.Copy(element, destPath));
+                        await Task.Factory.StartNew(() => Helpers.Copy(element, destPath, Dispatcher));
                 else
                     throw new NotSupportedException(Properties.Resources.EXC_FORMAT);
 
@@ -161,10 +161,18 @@ namespace RaspCommander
                 if (Helpers.VirtualFolders.MyComputer.Equals(left ? LeftCatalog : RightCatalog) || Helpers.Up.Equals(obj.Name))
                     throw new InvalidOperationException(Properties.Resources.EXC_VIRTUAL_FOLDER_DELETE);
 
-                if (File.GetAttributes(obj.Path).HasFlag(FileAttributes.Directory))
-                    await Task.Factory.StartNew(() => Directory.Delete(obj.Path, true));
-                else
-                    await Task.Factory.StartNew(() => File.Delete(obj.Path));
+                if (MessageBox.Show(
+                    string.Format(Properties.Resources.QUESTION_DELETE_TEXT, obj.Path),
+                    Properties.Resources.APP_TITLE,
+                    MessageBoxButton.YesNo,
+                    MessageBoxImage.Question)
+                    .Equals(MessageBoxResult.Yes))
+                {
+                    if (File.GetAttributes(obj.Path).HasFlag(FileAttributes.Directory))
+                        await Task.Factory.StartNew(() => Directory.Delete(obj.Path, true));
+                    else
+                        await Task.Factory.StartNew(() => File.Delete(obj.Path));
+                }
             }
             catch (Exception exc)
             {

@@ -20,8 +20,19 @@ Click a header to sort the grid by it.
 
 ![Sorting example](/Screenshots/Sort.png)
 
-## Asynchronous actions
-Whenever you delete or copy any item, the UI will become disabled till the completion of the operation,
+### Deletion
+You can delete any file or folder in the context menu.
+
+![Delete - dialog](/Screenshots/Confirm.png)
+
+## Operating
+### Progress bar
+A progress window will appear when copying files or folders. It will show the currently copied file and the overall (in the matter of quantity) progres.
+
+![Progress window](/Screenshots/Progress.png)
+
+###  Asynchronous actions
+Whenever you delete or copy any item, the UI will become disabled until the completion of the operation,
 thus allowing the program not to become detected as "not responding" by Windows.
 
 ![UI during operation](/Screenshots/Async.png)

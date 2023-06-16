@@ -1,5 +1,5 @@
 # RaspCommander
-Yet another graphical file manager written in .NET Framwork 4.8.
+Yet another graphical file manager written in .NET Framework 4.8.
 It supports opening, exploring, sorting, deleting and copying files and folders.
 
 ![Program image](/Screenshots/Main.png)
